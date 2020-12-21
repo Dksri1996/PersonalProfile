@@ -1,0 +1,265 @@
+/*Styling common to all the html page that includes body and top navigation bar*/
+body{
+    background-color: rgb(121, 170, 182);
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(29, 86, 124);
+}
+
+.navigation{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.name{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.navigation>div{
+    margin-right: 1em;
+    margin-left: .5em;
+}
+
+.non-nav div{
+    color: rgb(255, 255, 255);
+    margin-right: .5em;
+    font-weight: bolder;
+}
+
+.non-nav div ul{
+    display: none;
+    list-style-type: none;
+    margin-right: 0.5em;
+}
+
+.hovers li{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -1.5em;
+    margin-right: 1em;
+    color: rgb(29, 86, 124);
+    border-bottom: 3px dotted rgb(29, 86, 124);
+}
+.non-nav div:hover .hovers{
+    display: block;
+    position: absolute;
+    background:  rgb(254, 254, 255);;
+    margin-top:15px ;
+    margin-left: -15px;
+    border: 2px solid rgb(29, 86, 124);
+    
+}
+
+.top div a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.ABOUT a:hover{
+    color: brown;
+}
+
+.EDUCATION a:hover{
+    color: brown;
+}
+
+.SKILLS a:hover{
+    color: brown;
+}
+
+.PROJECT a:hover{
+    color: brown;
+}
+
+.EXTRA a:hover{
+    color: brown;
+}
+
+.x::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    transition: width .3;
+}
+
+.current{
+    background-color: rgb(121, 170, 182);
+    padding: 0.8em;
+    border-radius: 3PX;
+}
+
+.x:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/*Styling specific to main.html*/
+
+.item img{
+    width: 100%;
+    height: 75vh;
+}
+
+.item{
+    margin-top: .3em;
+}
+
+.objective{
+    margin-top: 0.1em;
+    color: rgb(7, 7, 7);
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "photo content";
+}
+
+.photo img{
+    width: 50%;
+    height: 70%;
+    margin-top: 3em;
+    margin-left: 5em;
+    border: 2px solid rgb(29, 86, 124);
+}
+
+.content{
+    margin-top: 6em;
+    margin-left: 1em;
+    margin-right: 15em;
+}
+
+.content h4{
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.content p{
+    margin-top: 0em;
+}
+
+
+/* education page styling */
+.edu-m{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "des4 pic4";
+    margin-top: 1em;
+}
+
+.edu-b{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "pic5 des5 ";
+    margin-top: 3em;
+}
+
+.school{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "des6 pic6";
+    margin-top: 3em;
+}
+
+.pic5 img{
+    width: 100vh;
+    height: 50vh;
+    border: 2px solid rgb(12, 12, 12);
+}
+
+.pic6 img{
+    width: 100vh;
+    height: 80vh;
+    border: 2px solid rgb(12, 12, 12);
+}
+
+.pic4 img{
+    width: 100vh;
+    height: 50vh;
+    border: 2px solid rgb(12, 12, 12);
+}
+ 
+.des4{
+    width: 80vh;
+    height: 40vh;
+    margin-top: 5em;
+    margin-left: 8em;
+}
+
+.des5{
+    width: 80vh;
+    height: 40vh;
+    margin-top: 5em;
+    margin-left: 8em;
+}
+
+.des6{
+    width: 80vh;
+    height: 50vh;
+    margin-top: 5em;
+    margin-left: 8em;
+}
+
+.l{
+    margin-top: 5em;
+}
+
+/* Styling specific to project.html*/ 
+.gif img{
+    margin-top: 3.5em;
+    margin-left: 15em;
+    width: 60%;
+    height: 65%;
+    border: 2px solid rgb(12, 12, 12);
+}
+
+.quick{
+    margin-top: 2em;
+    margin-left: 4.5em;
+}
+
+/* Styling specifically skill.html page*/
+.logo img{
+    width: 50vh;
+    height: 40vh;  
+}
+
+.logo{
+    margin-top: 6em;
+    margin-left: 8em;
+}
+.logodes{
+   
+    margin-top: 8em;
+    margin-left: 10em;
+    margin-right: 10em;
+ }
+
+ .logodes p{
+     font-size: 3.8mm;
+ }
+
+
+.skill{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "logo logodes";
+}
+
+/*Styling of specific extra.html file */
+.curriculum ul{
+    background-color: rgb(255, 255, 255);
+    color:  rgb(29, 86, 124);
+    margin-right: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    font-size: 6mm;
+    border-radius: 10px;
+}
+
