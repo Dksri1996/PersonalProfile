@@ -1,7 +1,7 @@
 /*Styling common to all the html page that includes body and top navigation bar*/
 body{
     background-color: rgb(121, 170, 182);
-    font-family:Courier;
+    font-family:"Courier";
 }
 .top{
     display: flex;
